@@ -11,12 +11,8 @@
 
   - name: install apache2 package
     dnf:
-      name: httpd
-      state: latest
-    when: ansible_distribution == "CentOS"
-
-  - name: add php support
-    dnf:
-      name: php
+      name:
+        - httpd
+        - php
       state: latest
     when: ansible_distribution == "CentOS"

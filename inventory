@@ -1,2 +1,5 @@
+[ubuntu-servers]
 192.168.0.206
+
+[centos-servers]
 192.168.0.120
